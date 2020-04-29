@@ -1,0 +1,61 @@
+{
+  "type": "info",
+  "pr_number": 44338,
+  "author": "ctavan",
+  "owners": [],
+  "dangerLevel": "ScopedAndTested",
+  "headCommitAbbrOid": "feca586",
+  "headCommitOid": "feca5861cbf1d0b9f39ff4ad05c53b65e177ffe3",
+  "mergeIsRequested": false,
+  "stalenessInDays": 0,
+  "lastCommitDate": "2020-04-29T12:14:33.000Z",
+  "reviewLink": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/44338/files",
+  "hasMergeConflict": false,
+  "authorIsOwner": false,
+  "isFirstContribution": false,
+  "popularityLevel": "Critical",
+  "anyPackageIsNew": false,
+  "packages": [
+    "uuid"
+  ],
+  "files": [
+    {
+      "filePath": "types/uuid/index.d.ts",
+      "kind": "definition",
+      "package": "uuid"
+    },
+    {
+      "filePath": "types/uuid/uuid-tests.ts",
+      "kind": "test",
+      "package": "uuid"
+    },
+    {
+      "filePath": "types/uuid/v1.d.ts",
+      "kind": "definition",
+      "package": "uuid"
+    },
+    {
+      "filePath": "types/uuid/v3.d.ts",
+      "kind": "definition",
+      "package": "uuid"
+    },
+    {
+      "filePath": "types/uuid/v4.d.ts",
+      "kind": "definition",
+      "package": "uuid"
+    },
+    {
+      "filePath": "types/uuid/v5.d.ts",
+      "kind": "definition",
+      "package": "uuid"
+    }
+  ],
+  "otherApprovalCount": 1,
+  "ownerApprovalCount": 0,
+  "maintainerApprovalCount": 0,
+  "hasDismissedReview": false,
+  "travisResult": "pass",
+  "reviewersWithStaleReviews": [],
+  "approvalFlags": 1,
+  "isChangesRequested": false
+}

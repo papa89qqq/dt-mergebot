@@ -1,0 +1,280 @@
+{
+  "data": {
+    "repository": {
+      "pullRequest": {
+        "id": "MDExOlB1bGxSZXF1ZXN0NDEwNjc2MTk1",
+        "title": "Upgrade to uuid v8",
+        "lastEditedAt": null,
+        "author": {
+          "login": "ctavan",
+          "__typename": "User"
+        },
+        "authorAssociation": "CONTRIBUTOR",
+        "baseRef": {
+          "name": "master",
+          "__typename": "Ref"
+        },
+        "changedFiles": 6,
+        "createdAt": "2020-04-29T12:17:22Z",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Critical package",
+              "__typename": "Label"
+            },
+            {
+              "name": "Other Approved",
+              "__typename": "Label"
+            },
+            {
+              "name": "Perf: Same",
+              "__typename": "Label"
+            }
+          ],
+          "__typename": "LabelConnection"
+        },
+        "isDraft": false,
+        "mergeable": "MERGEABLE",
+        "number": 44338,
+        "state": "OPEN",
+        "headRefOid": "feca5861cbf1d0b9f39ff4ad05c53b65e177ffe3",
+        "timelineItems": {
+          "nodes": [
+            {
+              "__typename": "PullRequestCommit",
+              "commit": {
+                "oid": "9faad3a2b3b012c9af64dd396142504eb2bf36b1",
+                "__typename": "Commit"
+              }
+            },
+            {
+              "__typename": "PullRequestCommit",
+              "commit": {
+                "oid": "feca5861cbf1d0b9f39ff4ad05c53b65e177ffe3",
+                "__typename": "Commit"
+              }
+            },
+            {
+              "__typename": "IssueComment"
+            },
+            {
+              "__typename": "IssueComment"
+            },
+            {
+              "__typename": "PullRequestReview",
+              "author": {
+                "login": "LinusU",
+                "__typename": "User"
+              },
+              "state": "APPROVED"
+            },
+            {
+              "__typename": "IssueComment"
+            }
+          ],
+          "__typename": "PullRequestTimelineItemsConnection"
+        },
+        "reviews": {
+          "nodes": [
+            {
+              "author": {
+                "login": "LinusU",
+                "__typename": "User"
+              },
+              "commit": {
+                "oid": "feca5861cbf1d0b9f39ff4ad05c53b65e177ffe3",
+                "abbreviatedOid": "feca586",
+                "__typename": "Commit"
+              },
+              "authorAssociation": "CONTRIBUTOR",
+              "state": "APPROVED",
+              "submittedAt": "2020-04-29T12:19:16Z",
+              "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/pull/44338#pullrequestreview-402610694",
+              "__typename": "PullRequestReview"
+            }
+          ],
+          "__typename": "PullRequestReviewConnection"
+        },
+        "commits": {
+          "totalCount": 2,
+          "nodes": [
+            {
+              "commit": {
+                "checkSuites": {
+                  "nodes": [],
+                  "__typename": "CheckSuiteConnection"
+                },
+                "status": null,
+                "authoredDate": "2020-04-29T12:11:11Z",
+                "committedDate": "2020-04-29T12:11:11Z",
+                "pushedDate": null,
+                "abbreviatedOid": "9faad3a",
+                "oid": "9faad3a2b3b012c9af64dd396142504eb2bf36b1",
+                "__typename": "Commit"
+              },
+              "__typename": "PullRequestCommit"
+            },
+            {
+              "commit": {
+                "checkSuites": {
+                  "nodes": [
+                    {
+                      "app": {
+                        "name": "Azure Pipelines",
+                        "__typename": "App"
+                      },
+                      "conclusion": "SUCCESS",
+                      "resourcePath": "/DefinitelyTyped/DefinitelyTyped/commit/feca5861cbf1d0b9f39ff4ad05c53b65e177ffe3/checks?check_suite_id=638750014",
+                      "status": "COMPLETED",
+                      "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/commit/feca5861cbf1d0b9f39ff4ad05c53b65e177ffe3/checks?check_suite_id=638750014",
+                      "__typename": "CheckSuite"
+                    }
+                  ],
+                  "__typename": "CheckSuiteConnection"
+                },
+                "status": {
+                  "state": "SUCCESS",
+                  "contexts": [
+                    {
+                      "state": "SUCCESS",
+                      "description": "The Travis CI build passed",
+                      "creator": {
+                        "login": "johnnyreilly",
+                        "__typename": "User"
+                      },
+                      "targetUrl": "https://travis-ci.org/github/DefinitelyTyped/DefinitelyTyped/builds/680978808?utm_source=github_status&utm_medium=notification",
+                      "__typename": "StatusContext"
+                    }
+                  ],
+                  "__typename": "Status"
+                },
+                "authoredDate": "2020-04-29T12:12:08Z",
+                "committedDate": "2020-04-29T12:12:08Z",
+                "pushedDate": "2020-04-29T12:14:33Z",
+                "abbreviatedOid": "feca586",
+                "oid": "feca5861cbf1d0b9f39ff4ad05c53b65e177ffe3",
+                "__typename": "Commit"
+              },
+              "__typename": "PullRequestCommit"
+            }
+          ],
+          "__typename": "PullRequestCommitConnection"
+        },
+        "comments": {
+          "totalCount": 3,
+          "nodes": [
+            {
+              "id": "MDEyOklzc3VlQ29tbWVudDYyMTE2NTE4Nw==",
+              "author": {
+                "login": "typescript-bot",
+                "__typename": "User"
+              },
+              "body": "@ctavan Thank you for submitting this PR! \n\n\n## Code Reviews\n\nBecause this is a widely-used package, a DT maintainer will need to review it before it can be merged.\n\n\n## Status\n\n * ✅ No merge conflicts\n * ❌ Continuous integration tests have passed\n * ❌ Most recent commit is approved by DT maintainers\n\nOnce every item on this list is checked, I'll ask you for permission to merge and publish the changes.\n\n----------------------\n<details><summary>Diagnostic Information: What the bot saw about this PR</summary>\n\n```json\n{\n  \"type\": \"info\",\n  \"pr_number\": 44338,\n  \"author\": \"ctavan\",\n  \"owners\": [],\n  \"dangerLevel\": \"ScopedAndTested\",\n  \"headCommitAbbrOid\": \"feca586\",\n  \"headCommitOid\": \"feca5861cbf1d0b9f39ff4ad05c53b65e177ffe3\",\n  \"mergeIsRequested\": false,\n  \"stalenessInDays\": 0,\n  \"lastCommitDate\": \"2020-04-29T12:14:33.000Z\",\n  \"reviewLink\": \"https://github.com/DefinitelyTyped/DefinitelyTyped/pull/44338/files\",\n  \"hasMergeConflict\": false,\n  \"authorIsOwner\": false,\n  \"isFirstContribution\": false,\n  \"popularityLevel\": \"Critical\",\n  \"anyPackageIsNew\": false,\n  \"packages\": [\n    \"uuid\"\n  ],\n  \"files\": [\n    {\n      \"filePath\": \"types/uuid/index.d.ts\",\n      \"kind\": \"definition\",\n      \"package\": \"uuid\"\n    },\n    {\n      \"filePath\": \"types/uuid/uuid-tests.ts\",\n      \"kind\": \"test\",\n      \"package\": \"uuid\"\n    },\n    {\n      \"filePath\": \"types/uuid/v1.d.ts\",\n      \"kind\": \"definition\",\n      \"package\": \"uuid\"\n    },\n    {\n      \"filePath\": \"types/uuid/v3.d.ts\",\n      \"kind\": \"definition\",\n      \"package\": \"uuid\"\n    },\n    {\n      \"filePath\": \"types/uuid/v4.d.ts\",\n      \"kind\": \"definition\",\n      \"package\": \"uuid\"\n    },\n    {\n      \"filePath\": \"types/uuid/v5.d.ts\",\n      \"kind\": \"definition\",\n      \"package\": \"uuid\"\n    }\n  ],\n  \"otherApprovalCount\": 1,\n  \"ownerApprovalCount\": 0,\n  \"maintainerApprovalCount\": 0,\n  \"hasDismissedReview\": false,\n  \"travisResult\": \"unknown\",\n  \"reviewersWithStaleReviews\": [],\n  \"approvalFlags\": 1,\n  \"isChangesRequested\": false\n}\n```\n\n</details>\n<!--typescript_bot_welcome-->",
+              "createdAt": "2020-04-29T12:17:25Z",
+              "reactions": {
+                "nodes": [],
+                "__typename": "ReactionConnection"
+              },
+              "__typename": "IssueComment"
+            },
+            {
+              "id": "MDEyOklzc3VlQ29tbWVudDYyMTE2NTI3OQ==",
+              "author": {
+                "login": "typescript-bot",
+                "__typename": "User"
+              },
+              "body": "@ctavan The Travis CI build failed! Please [review the logs for more information](https://travis-ci.org/github/DefinitelyTyped/DefinitelyTyped/builds/680978808?utm_source=github_status&utm_medium=notification).\r\n\r\nOnce you've pushed the fixes, the build will automatically re-run. Thanks!\n<!--typescript_bot_complaint-feca586-->",
+              "createdAt": "2020-04-29T12:17:36Z",
+              "reactions": {
+                "nodes": [],
+                "__typename": "ReactionConnection"
+              },
+              "__typename": "IssueComment"
+            },
+            {
+              "id": "MDEyOklzc3VlQ29tbWVudDYyMTE3MDEzMg==",
+              "author": {
+                "login": "typescript-bot",
+                "__typename": "User"
+              },
+              "body": "<!-- @dt-perf {\"version\":2,\"data\":{\"overallChange\":0,\"benchmarks\":[{\"createdAt\":\"2020-04-29T12:27:13.786Z\"}]}} -->\n\n👋 **Hi there!** I’ve run some quick measurements against master and your PR. These metrics should help the humans reviewing this PR gauge whether it might negatively affect compile times or editor responsiveness for users who install these typings.\n\n\nLet’s review the numbers, shall we?\n\n\n\n<details>\n<summary><strong>Comparison details</strong> 📊</summary>\n\n|                                                                                           | master                                                                                                            | #44338                                                                                                               | diff   |\n| ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | ------ |\n| **Batch compilation**                                                                     |                                                                                                                   |                                                                                                                      |        |\n| Memory usage (MiB)                                                                        | 64.3                                                                                                              | 64.1                                                                                                                 | -0.2%  |\n| Type count                                                                                | 9464                                                                                                              | 9464                                                                                                                 | 0%     |\n| Assignability cache size                                                                  | 3247                                                                                                              | 3247                                                                                                                 | 0%     |\n|                                                                                           |                                                                                                                   |                                                                                                                      |        |\n| **Language service**                                                                      |                                                                                                                   |                                                                                                                      |        |\n| Samples taken                                                                             | 136                                                                                                               | 122                                                                                                                  | -10%   |\n| Identifiers in tests                                                                      | 136                                                                                                               | 122                                                                                                                  | -10%   |\n| **`getCompletionsAtPosition`**                                                            |                                                                                                                   |                                                                                                                      |        |\n| &nbsp;&nbsp;&nbsp;&nbsp;Mean duration (ms)                                                | 281.4                                                                                                             | 287.8                                                                                                                | +2.3%  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Mean [CV](https://en.wikipedia.org/wiki/Coefficient_of_variation) | 11.6%                                                                                                             | 11.1%                                                                                                                |        |\n| &nbsp;&nbsp;&nbsp;&nbsp;Worst duration (ms)                                               | 338.9                                                                                                             | 373.3                                                                                                                | +10.2% |\n| &nbsp;&nbsp;&nbsp;&nbsp;Worst identifier                                                  | [h](/DefinitelyTyped/DefinitelyTyped/blob/a095649c044569b36b6547059788c838e1047d2f/types/uuid/uuid-tests.ts#L68)  | [alloc](/DefinitelyTyped/DefinitelyTyped/blob/22254b2a8d8cf36a9137fac941211de967da852c/types/uuid/uuid-tests.ts#L52) |        |\n| **`getQuickInfoAtPosition`**                                                              |                                                                                                                   |                                                                                                                      |        |\n| &nbsp;&nbsp;&nbsp;&nbsp;Mean duration (ms)                                                | 282.4                                                                                                             | 293.2                                                                                                                | +3.8%  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Mean [CV](https://en.wikipedia.org/wiki/Coefficient_of_variation) | 12.3%                                                                                                             | 12.2%                                                                                                                | -0.6%  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Worst duration (ms)                                               | 349.7                                                                                                             | 352.0                                                                                                                | +0.7%  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Worst identifier                                                  | [l3](/DefinitelyTyped/DefinitelyTyped/blob/a095649c044569b36b6547059788c838e1047d2f/types/uuid/uuid-tests.ts#L73) | [e5](/DefinitelyTyped/DefinitelyTyped/blob/22254b2a8d8cf36a9137fac941211de967da852c/types/uuid/uuid-tests.ts#L55)    |        |\n\n\n</details>\n\nIt looks like nothing changed too much. I won’t post performance data again unless it gets worse.",
+              "createdAt": "2020-04-29T12:27:14Z",
+              "reactions": {
+                "nodes": [],
+                "__typename": "ReactionConnection"
+              },
+              "__typename": "IssueComment"
+            }
+          ],
+          "__typename": "IssueCommentConnection"
+        },
+        "files": {
+          "nodes": [
+            {
+              "path": "types/uuid/index.d.ts",
+              "additions": 1,
+              "deletions": 1,
+              "__typename": "PullRequestChangedFile"
+            },
+            {
+              "path": "types/uuid/uuid-tests.ts",
+              "additions": 0,
+              "deletions": 11,
+              "__typename": "PullRequestChangedFile"
+            },
+            {
+              "path": "types/uuid/v1.d.ts",
+              "additions": 0,
+              "deletions": 8,
+              "__typename": "PullRequestChangedFile"
+            },
+            {
+              "path": "types/uuid/v3.d.ts",
+              "additions": 0,
+              "deletions": 8,
+              "__typename": "PullRequestChangedFile"
+            },
+            {
+              "path": "types/uuid/v4.d.ts",
+              "additions": 0,
+              "deletions": 8,
+              "__typename": "PullRequestChangedFile"
+            },
+            {
+              "path": "types/uuid/v5.d.ts",
+              "additions": 0,
+              "deletions": 8,
+              "__typename": "PullRequestChangedFile"
+            }
+          ],
+          "__typename": "PullRequestChangedFileConnection"
+        },
+        "projectCards": {
+          "nodes": [
+            {
+              "id": "MDExOlByb2plY3RDYXJkMzcyMzU5Nzk=",
+              "project": {
+                "id": "MDc6UHJvamVjdDM3NDExMDQ=",
+                "number": 5,
+                "name": "New Pull Request Status Board",
+                "__typename": "Project"
+              },
+              "column": {
+                "id": "MDEzOlByb2plY3RDb2x1bW43NTUyOTMw",
+                "name": "Waiting for Code Reviews",
+                "__typename": "ProjectColumn"
+              },
+              "__typename": "ProjectCard"
+            }
+          ],
+          "__typename": "ProjectCardConnection"
+        },
+        "__typename": "PullRequest"
+      },
+      "__typename": "Repository"
+    }
+  },
+  "loading": false,
+  "networkStatus": 7,
+  "stale": false
+}
