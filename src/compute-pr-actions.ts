@@ -205,10 +205,10 @@ export function process(info: PrInfo | BotEnsureRemovedFromProject | BotNoPackag
     }
 
     // This bot is faster than Travis in coming back to give a response, and so the bot starts flipping between
-    // a 'where is travis'-ish state and a 'got travis deets' state. To work around this, we wait a 
-    // minute since the last timeline push action before label/project states can be updated
+    // a 'where is travis'-ish state and a 'got travis deets' state. To work around this, we give some
+    // time since the last timeline push action before label/project states can be updated
 
-    const oneMinute = 60 * 1000
+    const oneMinute = 5 * 60 * 1000
     const tooEarlyForLabelsOrProjects = info.lastCommitDate.valueOf() + oneMinute < now.valueOf()
     context.shouldUpdateLabels = tooEarlyForLabelsOrProjects
     context.shouldUpdateProjectColumn = tooEarlyForLabelsOrProjects
