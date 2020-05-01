@@ -82,10 +82,10 @@ const httpTrigger = async function (context, _req) {
     if ("pull_request" in webhook) {
         prNumber = webhook.pull_request.number
         prTitle = webhook.pull_request.title
-    } else if("issue" in webhook) {
+    } else if ("issue" in webhook) {
         prNumber = webhook.issue.number
         prTitle = webhook.issue.title
-    } else if("sha" in webhook) {
+    } else if ("sha" in webhook) {
         // See https://github.com/maintainers/early-access-feedback/issues/114 for more context on getting a PR from a SHA
         // TLDR: it's not in the API, and this search hack has been in used on Peril for the last ~3 years
         const repoString = webhook.repository.full_name
@@ -100,6 +100,12 @@ const httpTrigger = async function (context, _req) {
     if (prNumber === -1) throw new Error(`PR Number was not set from a webhook - ${event} on ${action}`)
 
     context.log.info(`Getting info for PR ${prNumber} - ${prTitle}`)
+    
+    // Status events only come from Travis, and we're seeing the results of a travis success webhook
+    // come back as "unknown" in the PR metadata. Perhaps we're looking in the wrong place, however it's
+    // Very hard to get an exact fixture to prove that. In the mean-time, to give any GH caches a chance 
+    // to clear out, we'll experiment with a half a second delay.
+    if ("sha" in webhook && webhook.state === "success" ) await sleep(500)
 
     // Generate the info for the PR from scratch
     const info = await queryPRInfo(prNumber)
@@ -151,3 +157,7 @@ const httpTrigger = async function (context, _req) {
 };
 
 module.exports = httpTrigger;
+
+function sleep (time) {
+    return new Promise((resolve) => setTimeout(resolve, time));
+  }

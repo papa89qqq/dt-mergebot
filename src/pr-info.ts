@@ -508,6 +508,7 @@ function getTravisResult(headCommit: PR_repository_pullRequest_commits_nodes_com
             switch (totalStatusChecks.state) {
                 case StatusState.SUCCESS:
                     travisResult = TravisResult.Pass;
+
                     break;
                 case StatusState.PENDING:
                 case StatusState.FAILURE:
